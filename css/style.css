@@ -28,3 +28,9 @@ main{
 .objects{
     color: rgb(243, 230, 55);
 }
+.object-border{
+    border-bottom: 1px solid rgb(110, 104, 104);
+}
+.object-bg{
+    background-color: aqua;
+}

@@ -29,3 +29,28 @@ for(const li of findLi){
     console.log(li.innerText);
 }
 
+
+/* using dynamic style */
+
+document.getElementById('things-title').style.color='red';
+document.getElementById('things-title').style.textAlign='center';
+
+/* get or set attribute */
+
+document.getElementById('things-title').setAttribute('title','This the title');
+console.log(document.getElementById('things-title').getAttribute('title'));
+
+/* inner html vs inner text */
+
+console.log(document.getElementsByClassName('elements-container')[0].innerHTML);
+console.log(document.getElementsByClassName('elements-container')[0].innerText);
+// console.log(document.getElementsByClassName('elements-container')[0].innerHTML='<h1>This is the process to set tag</h1>');
+// console.log(document.getElementsByClassName('elements-container')[0].innerText='This is the process to set text');
+
+
+
+/* add or remove css class */
+
+const objectContainer = document.getElementById('object-container');
+objectContainer.classList.add('object-border');
+objectContainer.classList.remove('object-bg');
